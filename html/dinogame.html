@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dino Game</title>
+<style>
+    body {
+        background: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        font-family: Arial;
+    }
+
+    .game {
+        width: 600px;
+        height: 200px;
+        border: 2px solid #333;
+        background: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .dino {
+        width: 40px;
+        height: 40px;
+        background: green;
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+    }
+
+    .jump {
+        animation: jump 0.5s linear;
+    }
+
+    @keyframes jump {
+        0% { bottom: 0; }
+        50% { bottom: 80px; }
+        100% { bottom: 0; }
+    }
+
+    .cactus {
+        width: 20px;
+        height: 40px;
+        background: red;
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        animation: move 1.5s infinite linear;
+    }
+
+    @keyframes move {
+        0% { right: -20px; }
+        100% { right: 620px; }
+    }
+
+    .score {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+
+<div class="game">
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="dino" id="dino"></div>
+    <div class="cactus" id="cactus"></div>
+</div>
+
+<script>
+    const dino = document.getElementById("dino");
+    const cactus = document.getElementById("cactus");
+    const scoreText = document.getElementById("score");
+    let score = 0;
+
+    document.addEventListener("keydown", function () {
+        if (!dino.classList.contains("jump")) {
+            dino.classList.add("jump");
+
+            setTimeout(() => {
+                dino.classList.remove("jump");
+            }, 500);
+        }
+    });
+
+    setInterval(() => {
+        let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("bottom"));
+        let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("right"));
+
+        if (cactusLeft > 550 && cactusLeft < 590 && dinoTop < 30) {
+            alert("Game Over! Score: " + score);
+            score = 0;
+            scoreText.innerText = score;
+        }
+    }, 10);
+
+    setInterval(() => {
+        score++;
+        scoreText.innerText = score;
+    }, 1000);
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="../css/sasa.css">
+</head>
+<body>
+     <p class="contant"> Lorem ipsum a excepturi. Nobis, autem ea?</p>
+</body>
+<script src="../js/question.js"></script>
+</html>

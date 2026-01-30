@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button with JavaScript</title>
+    <link rel="stylesheet" href="../css/sasa.css">
+</head>
+<style>
+      
+</style>
+<body>
+
+    <button id="myButton" onclick="submit()">Chek Mark Sheet</button>
+
+    <script>
+      function submit(){
+        const name =  prompt("Enter your Name");
+        const rollNo =  prompt("Enter  Your Roll No");
+        // marks
+        const English =Number(prompt("Enter Your English Marks"));
+        const Urdu= Number (prompt("Enter Your Urdu Marks"));
+        const Math = Number (prompt("Enter Your Math Marks"));
+        const total = English+Urdu+Math;
+        const percentage = (total/300*100);
+     
+        // output
+        console.log("Student Name:",name);
+        console.log("Student Roll No:",rollNo);
+        console.log("Marks of English:",English);
+        console.log("Marks of Urdu:",Urdu);
+        console.log("Marks of Math:",Math);
+        console.log("Total Marks :",total);
+        console.log("Percentage :",percentage.toFixed(1),"%");
+        
+        
+        
+
+        // if(name==="Tajwar"){
+        //  console.log("nice Name");
+    
+        // }
+        // else{
+        //     console.log("wrong Name");
+            
+        // }
+        
+      }
+           
+    </script>
+
+</body>
+</html>

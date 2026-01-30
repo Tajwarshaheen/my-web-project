@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh</title>
+    <style>
+        .refresh{
+            width: 300px;
+            height: 60vh;
+            background-color: skyblue;
+            position: relative;
+            border-radius: 20px;
+            left: 800px;
+            border: 2px solid black;
+            top: 10px;
+            
+        }
+        .refresh a{
+            text-decoration: none;
+            align-items: center;
+            color: aliceblue;
+            font-size: 30px;
+            display: block;
+            justify-content: space-between;
+            padding: 7px;
+            position: relative;
+            left: 110px;
+        }
+          .refresh .red:hover{
+            color: red;
+          }
+            .refresh .blue:hover{
+            color: blue;
+          }
+          .refresh .yellow:hover{
+            color: yellow;
+          }
+           .refresh .green:hover{
+            color: green;
+          }
+           .refresh .pink:hover{
+            color: pink;
+          }
+          .refresh .dark:hover{
+            color: gray;
+          }
+           .refresh .orange:hover{
+            color: orange;
+          }
+    </style>
+</head>
+<body>
+            <div class="refresh">
+            <a href="#" onclick="Red()" class="red">Red</a>
+            <a href="#" onclick="Blue()"class ="blue">Blue</a>
+            <a href="#" onclick="Yellow()"class ="yellow">Yellow</a>
+            <a href="#" onclick="Green()"class ="green">Green</a>
+            <a href="#" onclick="pink()"class ="pink"> Pink</a>
+            <a href="#" onclick="Dark()"class ="dark">Dark</a>
+            <a href="#" onclick="Orange()"class ="orange">Orange</a>
+         </div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur modi sapiente possimus, dolorem labore suscipit commodi animi cumque eaque! Ipsa, repellat doloribus nobis ducimus ullam delectus blanditiis et nihil dolores</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus blanditiis, ipsum vitae id quas libero. Vel sapiente fugiat aliquid numquam animi, vero porro repellat quibusdam adipisci beatae eligendi ab?</p>
+</body>
+<script> 
+function Red(){
+    document.body.style.backgroundColor="red";
+}
+function Blue(){
+    document.body.style.backgroundColor="Blue";
+    // document.body.querySelector(".refresh").style.backgroundColor="blue";
+    document.body.querySelector("p").style.Color=" white"
+}
+function Yellow(){
+    document.body.style.backgroundColor="Yellow";
+}
+function Green(){
+    document.body.style.backgroundColor="Green";
+}
+function  Dark(){
+    document.body.style.backgroundColor="gray";
+}
+function Orange(){
+    document.body.style.backgroundColor="orange";
+}
+function pink(){
+    document.body.style.backgroundColor="pink"
+}
+</script>
+</html>
