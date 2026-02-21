@@ -15,7 +15,7 @@
 //     return new Promise((resolve,reject)=>{
 //     setTimeout(() => {
 //         console.log("Data",dataId);
-//         resolve("success")
+//         reject("Your aerer rejectdded")
 //         if(getnextData){
 //             getnextData();
 //         }
@@ -183,7 +183,7 @@ console.log("Getting Data 3...");
 console.log("Getting Data 4...");
 
             return getData(4).then(()=>{
-                console.log("Successfully");
+                console.log("Successfullyss");
                 
             })
         })
